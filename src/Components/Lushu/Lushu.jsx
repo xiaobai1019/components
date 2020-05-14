@@ -1,3 +1,5 @@
+//// <script src="//api.map.baidu.com/api?v=3.0&ak=iuCDaDwUqbV1WlDKDY5gNiS0Dty50mVY"></script>
+// <script src="%PUBLIC_URL%/Common/lushu.js"></script>
 import React, { Fragment } from 'react';
 
 let BMap = window.BMap;

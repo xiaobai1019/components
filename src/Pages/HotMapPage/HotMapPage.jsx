@@ -1,3 +1,5 @@
+// <script src="//api.map.baidu.com/api?v=3.0&type=webgl&ak=iuCDaDwUqbV1WlDKDY5gNiS0Dty50mVY"></script>
+// <script src="https://unpkg.com/mapvgl/dist/mapvgl.min.js"></script> 
 import React, { Fragment } from 'react';
 import Hot from '../../Components/Hot/Hot';
 import { points1, points2 } from './hot.js';

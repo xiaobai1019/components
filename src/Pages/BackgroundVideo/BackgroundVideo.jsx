@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 let Bideo = window.Bideo;
 export default class BackgroundVideo extends React.Component {
     background_video = React.createRef();
