@@ -1,7 +1,7 @@
 //<script src="//api.map.baidu.com/api?v=3.0&type=webgl&ak=iuCDaDwUqbV1WlDKDY5gNiS0Dty50mVY"></script>
 import React, { Fragment } from 'react';
 import Marker from '../../Components/Marker/Marker';
-import { points1, points2, points3 } from './points';
+import { points1, points2, points3 } from './Common/points.js';
 
 let all = [].concat(points1, points2);
 export default class App extends React.Component {

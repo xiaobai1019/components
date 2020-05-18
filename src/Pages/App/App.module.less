@@ -3,26 +3,68 @@
     height: 100%;
 }
 .menu{
-    width: 200px;
-    padding-top: 100px;
-    line-height: 30px;
+    width: 280px;
+    line-height: 40px;
     background-color: #3e4b6c;
-    li{
+    li {
         color: #fff;
         cursor: pointer;
-        a{
-            display: block; padding-right: 15px;
-            padding-left: 15px;
-        }
+    }
+    a,
+    p {
+        display: block;
+        padding-right: 15px;
+        padding-left: 15px;
         :hover{
             background-color: #9cacd2;
         }
     }
 }
+.submenu{
+    height: 0;
+    background-color: rgba(255, 255, 255, .2);
+    overflow: hidden;
+    transition: all 4s ease-in-out;
+    a {
+        padding-left: 30px;
+    }
+}
+
 .content{
     height: 100%;
     flex-grow: 1;
 }
 .active{
     background-color: #66759b;
+}
+.closeAngle,
+.openAngle{
+    position: relative;
+    &:after{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border-right: transparent 7px solid;
+        border-left: transparent 7px solid;
+        content: "";
+        transform: translate(-50%);
+    }
+}
+.closeAngle{
+    &:after{
+        border-bottom: #e0e0e0 8px solid;
+    }
+}
+.openAngle{
+    &:after{
+        border-top: #e0e0e0 8px solid;
+    }
+}
+.openMenu{
+    height: auto;
+}
+.closeMenu{
+    height: 0;
 }

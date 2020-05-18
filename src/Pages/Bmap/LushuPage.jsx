@@ -1,5 +1,5 @@
 import React from 'react';
-import { line } from './line';
+import { line } from './Common/line';
 import Lushu from '../../Components/Lushu/Lushu';
 
 export default class LushuPage extends React.Component {

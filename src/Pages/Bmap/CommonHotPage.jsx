@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import CommonHot from '../../Components/CommonHot/CommonHot';
-import { po1, po2 } from './hot.js';
-let all = [].concat(po1, po2)
+import { points1, points2 } from './Common/hot.js';
+let all = [].concat(points1, points2)
 export default class HotMap extends React.Component {
     constructor() {
         super();
@@ -22,10 +22,10 @@ export default class HotMap extends React.Component {
                 this.setState(() => ({ hotData: all }));
                 break;
             case 1:
-                this.setState(() => ({ hotData: po1, color: null }));
+                this.setState(() => ({ hotData: points1, color: null }));
                 break;
             case 2:
-                this.setState({ hotData: po2 });
+                this.setState({ hotData: points2 });
                 break;
             default:
                 this.setState(() => ({ hotData: all }));

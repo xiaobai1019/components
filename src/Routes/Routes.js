@@ -1,30 +1,19 @@
-import MarkerPage from './../Pages/MarkerPage/MarkerPage';
-import HotMapPage from './../Pages/HotMapPage/HotMapPage';
-import CommonHotPage from './../Pages/CommonHotPage/CommonHotPage';
-import LushuPage from './../Pages/LushuPage/LushuPage';
+
 import TimelinePage from './../Pages/TimelinePage/TimelinePage';
 import BackgroundVideo from './../Pages/BackgroundVideo/BackgroundVideo';
-import Mapv from './../Pages/Mapv/Mapv';
-import BlankMap from './../Pages/BmapMapv/BlankMap';
 import Video from './../Pages/Video/Video';
+import OpenStreetMap from './../Pages/OpenStreetMap/OpenStreetMap';
+// 百度地图
+import MarkerPage from '../Pages/Bmap/MarkerPage';
+import HotMapPage from '../Pages/Bmap/HotMapPage';
+import CommonHotPage from '../Pages/Bmap/CommonHotPage';
+import LushuPage from '../Pages/Bmap/LushuPage';
+import BMap3D from '../Pages/Bmap/BMap3D';
+import BMap3DPolyline from '../Pages/Bmap/BMap3DPolyline';
+import BMap3DPolygon from '../Pages/Bmap/BMap3DPolygon';
+import BMap3DViewAnimation from '../Pages/Bmap/BMap3DViewAnimation';
 
 export default [{
-    name: 'MarkerPage',
-    path: '/MarkerPage',
-    component: MarkerPage
-}, {
-    name: 'HotMapPage',
-    path: '/HotMapPage',
-    component: HotMapPage
-}, {
-    name: 'CommonHotPage',
-    path: '/CommonHotPage',
-    component: CommonHotPage
-}, {
-    name: 'LushuPage',
-    path: '/LushuPage',
-    component: LushuPage
-}, {
     name: 'TimelinePage',
     path: '/TimelinePage',
     component: TimelinePage
@@ -33,16 +22,54 @@ export default [{
     path: '/BackgroundVideo',
     component: BackgroundVideo
 }, {
-    name: 'Mapv',
-    path: '/Mapv',
-    component: Mapv
-}, {
-    name: 'BlankMap',
-    path: '/BlankMap',
-    component: BlankMap
-}, {
     name: 'Video',
     path: '/Video',
     component: Video
+}, {
+    name: 'OpenStreetMap',
+    path: '/OpenStreetMap',
+    component: OpenStreetMap
+},
+{
+    name: 'BMap',
+    path: '/BMap',
+    children: [{
+        name: 'CommonHotPage',
+        path: '/BMap/CommonHotPage',
+        component: CommonHotPage
+    }, {
+        name: 'LushuPage',
+        path: '/BMap/LushuPage',
+        component: LushuPage
+    }, {
+        name: 'MarkerPage',
+        path: '/BMap/MarkerPage',
+        component: MarkerPage
+    },
+    {
+        name: 'HotMapPage',
+        path: '/BMap/HotMapPage',
+        component: HotMapPage
+    },
+    {
+        name: 'BMap3D',
+        path: '/BMap/BMap3D',
+        component: BMap3D
+    }, {
+        name: 'BMap3DPolyline',
+        path: '/BMap/BMap3DPolyline',
+        component: BMap3DPolyline
+    },
+    {
+        name: 'BMap3DPolygon',
+        path: '/BMap/BMap3DPolygon',
+        component: BMap3DPolygon
+    },
+    {
+        name: 'BMap3DViewAnimation',
+        path: '/BMap/BMap3DViewAnimation',
+        component: BMap3DViewAnimation
+    },
+    ]
 }
 ]

@@ -2,7 +2,7 @@
 // <script src="https://unpkg.com/mapvgl/dist/mapvgl.min.js"></script> 
 import React, { Fragment } from 'react';
 import Hot from '../../Components/Hot/Hot';
-import { points1, points2 } from './hot.js';
+import { points1, points2 } from './Common/hot.js';
 let all = {
     1: points1,
     2: points2
