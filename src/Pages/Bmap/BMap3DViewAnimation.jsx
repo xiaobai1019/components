@@ -34,6 +34,7 @@ export default class BMap3DViewAnimation extends React.Component {
         //     ]
         // });
 
+
         var keyFrames = [
             {
                 center: new BMapGL.Point(-119.44102526969331, -29.83739122685262),

@@ -3,9 +3,9 @@ import React from 'react';
 import { eyeStyle } from './Common/style.js';
 let BMapGL = window.BMapGL;
 export default class BMap3D extends React.Component {
-    mapv = React.createRef();
+    bmap = React.createRef();
     componentDidMount() {
-        var map = new BMapGL.Map(this.mapv.current, {
+        var map = new BMapGL.Map(this.bmap.current, {
             restrictCenter: false,
             style: { styleJson: eyeStyle }
         });    // 创建Map实例
@@ -26,6 +26,6 @@ export default class BMap3D extends React.Component {
 
     }
     render() {
-        return <div ref={this.mapv} style={{ width: '100%', height: '100%' }}></div>
+        return <div ref={this.bmap} style={{ width: '100%', height: '100%' }}></div>
     }
 }

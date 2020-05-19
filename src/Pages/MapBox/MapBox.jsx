@@ -1,7 +1,7 @@
 import React from 'react';
 let mapboxgl = window.mapboxgl;
 // pk.eyJ1IjoiemhlbnlhbiIsImEiOiJjam5icWY3azAwM3JhM2xxbGFsd3lrNTVoIn0.maOhcGdNxjaSRG_HKnknRA
-export default class OpenStreetMap extends React.Component {
+export default class MapBox extends React.Component {
     componentDidMount() {
         mapboxgl.accessToken = 'pk.eyJ1IjoiemhlbnlhbiIsImEiOiJjam5icWY3azAwM3JhM2xxbGFsd3lrNTVoIn0.maOhcGdNxjaSRG_HKnknRA';
         var map = new mapboxgl.Map({
