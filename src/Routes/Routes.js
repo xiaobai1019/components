@@ -7,7 +7,7 @@ import MapBox from './../Pages/MapBox/MapBox';
 import MarkerPage from '../Pages/Bmap/MarkerPage';
 import HotMapPage from '../Pages/Bmap/HotMapPage';
 import CommonHotPage from '../Pages/Bmap/CommonHotPage';
-import LushuPage from '../Pages/Bmap/LushuPage';
+import Lushu from '../Pages/Bmap/Lushu';
 import BMap3D from '../Pages/Bmap/BMap3D';
 import BMap3DPolyline from '../Pages/Bmap/BMap3DPolyline';
 import BMap3DPolygon from '../Pages/Bmap/BMap3DPolygon';
@@ -41,9 +41,9 @@ export default [{
         path: '/BMap/CommonHotPage',
         component: CommonHotPage
     }, {
-        name: 'LushuPage',
-        path: '/BMap/LushuPage',
-        component: LushuPage
+        name: 'Lushu',
+        path: '/BMap/Lushu',
+        component: Lushu
     }, {
         name: 'MarkerPage',
         path: '/BMap/MarkerPage',
